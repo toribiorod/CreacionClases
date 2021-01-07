@@ -43,10 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alumno.cs" />
+    <Compile Include="Banco.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Club.cs" />
+    <Compile Include="Cuadrado.cs" />
+    <Compile Include="Empleado.cs" />
+    <Compile Include="MayorMenor.cs" />
+    <Compile Include="Operaciones.cs" />
     <Compile Include="Persona.cs" />
+    <Compile Include="Plano.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Socio.cs" />
+    <Compile Include="Tabla.cs" />
     <Compile Include="Triangulo.cs" />
+    <Compile Include="VectorOperarios.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
