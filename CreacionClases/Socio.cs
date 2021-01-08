@@ -29,5 +29,21 @@ namespace CreacionClases
             }
         }
         #endregion
+        #region "Metodos"
+        public Socio() {
+            Console.WriteLine("Digite el nombre");
+            Nombre = Console.ReadLine();
+            Console.WriteLine("Digite la antiguedad");
+            Antiguedad = int.Parse(Console.ReadLine());
+        }
+        public void imprimirDatos() {
+
+            Console.WriteLine("El socio" + Nombre + "es que tiene una mayor antiguedad  y es de : " + Antiguedad );
+        }
+        public int getAntiguedad() {
+
+            return Antiguedad;
+        }
+        #endregion
     }
 }

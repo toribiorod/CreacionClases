@@ -76,6 +76,10 @@ namespace CreacionClases
         {
             return Monto;
         }
+        public void imprimirOInfo()
+        {
+            Console.WriteLine(Nombre + Apellido + " tiene depositado la suma de " + Monto);
+        }
         #endregion
 
     }

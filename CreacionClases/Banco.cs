@@ -16,17 +16,29 @@ namespace CreacionClases
         public Banco()
         {
             Cliente = new Cliente[3];
-            for (int i = 0; i < Cliente.Length; i++)
-            {
-                Cliente[i] = new Cliente(names[i], charge);
-            }
+               
+            Cliente[0] = new Cliente("Toribio" ,"Roid","aa@aa.com","calle da");
+            Cliente[1] = new Cliente("Emma", "Varr", "aa@aa.com", "calle da");
+            Cliente[2] = new Cliente("Maria", "Perez", "aa@aa.com", "calle da");
+
         }
-        public void Operar() { 
-        
+        public void Operar() {
+            Cliente[0].Depositar(500);
+            Cliente[0].Depositar(1000);
+            Cliente[1].Depositar(100);
+            Cliente[2].Depositar(150);
+            Cliente[0].Extraer(200);
+
         }
         public void DepositosTotales()
         {
 
+            Cliente[0].RetornarMonto();
+            Cliente[0].imprimirOInfo();
+            Cliente[1].RetornarMonto();
+            Cliente[1].imprimirOInfo();
+            Cliente[2].RetornarMonto();
+            Cliente[2].imprimirOInfo();
         }
         #endregion
 

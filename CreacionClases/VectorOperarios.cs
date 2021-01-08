@@ -16,9 +16,8 @@ namespace CreacionClases
             for (int i = 0; i < 5; i++)
             {
                 Console.Write("Ingrese el sueldo {0}:",i + 1);
-                String linea;
-                linea = Console.ReadLine();
-                sueldos[i] = int.Parse(linea);
+                sueldos[i] = int.Parse(Console.ReadLine());
+
             }
         }
         public void mostrarSueldo() {
